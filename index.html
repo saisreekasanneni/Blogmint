@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlogMint - Fresh Ideas, Fresh Stories</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>🌿</span> Blog<span class="mint">Mint</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="write-btn" onclick="openModal()">
+            + Write a Blog
+        </button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <div class="tag">
+                ✨ A place for fresh ideas
+            </div>
+
+            <h1>
+                Fresh Ideas.<br>
+                <span>Fresh Stories.</span>
+            </h1>
+
+            <p>
+                Discover inspiring stories, useful ideas and
+                interesting perspectives from creative writers.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#blogs" class="main-btn">
+                    Explore Blogs →
+                </a>
+
+                <button class="outline-btn" onclick="openModal()">
+                    Start Writing
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="hero-image">
+                <span>FEATURED</span>
+            </div>
+
+            <div class="hero-content">
+
+                <small>CREATIVE LIFE</small>
+
+                <h2>
+                    Finding Inspiration in Everyday Moments
+                </h2>
+
+                <p>
+                    Sometimes the smallest moments create
+                    the biggest stories.
+                </p>
+
+                <div class="author">
+                    <div class="avatar">A</div>
+
+                    <div>
+                        <b>Aria Morgan</b>
+                        <small>5 min read</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+    <section class="stats">
+
+        <div>
+            <h2>2.5K+</h2>
+            <p>Stories Published</p>
+        </div>
+
+        <div>
+            <h2>850+</h2>
+            <p>Creative Writers</p>
+        </div>
+
+        <div>
+            <h2>12K+</h2>
+            <p>Monthly Readers</p>
+        </div>
+
+        <div>
+            <h2>20+</h2>
+            <p>Categories</p>
+        </div>
+
+    </section>
+
+
+    <!-- BLOGS -->
+    <section class="blogs" id="blogs">
+
+        <div class="section-title">
+
+            <div>
+                <span>EDITOR'S PICK</span>
+
+                <h2>Featured Stories</h2>
+
+                <p>
+                    Discover stories worth reading.
+                </p>
+            </div>
+
+            <button onclick="showAll()">
+                View All →
+            </button>
+
+        </div>
+
+
+        <div class="blog-container" id="blogContainer">
+
+
+            <!-- BLOG 1 -->
+            <div class="blog-card">
+
+                <div class="blog-img img1">
+                    <label>LIFESTYLE</label>
+
+                    <button onclick="likeBlog(this)">
+                        ♡
+                    </button>
+                </div>
+
+                <div class="blog-info">
+
+                    <small>6 min read • Oct 02, 2026</small>
+
+                    <h3>
+                        The Art of Slow Living
+                    </h3>
+
+                    <p>
+                        Learning to appreciate the little things
+                        and create space for what really matters.
+                    </p>
+
+                    <div class="blog-bottom">
+
+                        <span>Sarah Wilson</span>
+
+                        <span class="like">
+                            ♥ <b>42</b>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BLOG 2 -->
+            <div class="blog-card">
+
+                <div class="blog-img img2">
+
+                    <label>TECHNOLOGY</label>
+
+                    <button onclick="likeBlog(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="blog-info">
+
+                    <small>8 min read • Oct 01, 2026</small>
+
+                    <h3>
+                        AI and the Future of Creativity
+                    </h3>
+
+                    <p>
+                        Exploring how technology is changing
+                        the way we create and innovate.
+                    </p>
+
+                    <div class="blog-bottom">
+
+                        <span>Daniel Lee</span>
+
+                        <span class="like">
+                            ♥ <b>67</b>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BLOG 3 -->
+            <div class="blog-card">
+
+                <div class="blog-img img3">
+
+                    <label>TRAVEL</label>
+
+                    <button onclick="likeBlog(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="blog-info">
+
+                    <small>5 min read • Sep 29, 2026</small>
+
+                    <h3>
+                        A Weekend in the Mountains
+                    </h3>
+
+                    <p>
+                        A refreshing escape filled with quiet
+                        trails and beautiful views.
+                    </p>
+
+                    <div class="blog-bottom">
+
+                        <span>Maya Patel</span>
+
+                        <span class="like">
+                            ♥ <b>91</b>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories" id="categories">
+
+        <div class="category-title">
+
+            <span>EXPLORE</span>
+
+            <h2>Explore by Category</h2>
+
+            <p>
+                Find something that matches your interests.
+            </p>
+
+        </div>
+
+
+        <div class="category-container">
+
+            <div class="category">
+                <div class="icon blue">💻</div>
+                <h3>Technology</h3>
+                <p>128 stories</p>
+            </div>
+
+            <div class="category">
+                <div class="icon orange">✈️</div>
+                <h3>Travel</h3>
+                <p>96 stories</p>
+            </div>
+
+            <div class="category">
+                <div class="icon pink">❤️</div>
+                <h3>Lifestyle</h3>
+                <p>184 stories</p>
+            </div>
+
+            <div class="category">
+                <div class="icon purple">📚</div>
+                <h3>Education</h3>
+                <p>75 stories</p>
+            </div>
+
+            <div class="category">
+                <div class="icon yellow">🍴</div>
+                <h3>Food</h3>
+                <p>112 stories</p>
+            </div>
+
+            <div class="category">
+                <div class="icon green">✍️</div>
+                <h3>Stories</h3>
+                <p>143 stories</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+        <h2>
+            Fresh stories, straight to your inbox.
+        </h2>
+
+        <p>
+            Subscribe to BlogMint and discover something
+            inspiring every week.
+        </p>
+
+        <div class="subscribe">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+            >
+
+            <button onclick="subscribe()">
+                Subscribe
+            </button>
+
+        </div>
+
+        <small>
+            No spam. Unsubscribe anytime.
+        </small>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-picture">
+            <div>🌿</div>
+        </div>
+
+        <div class="about-text">
+
+            <span>ABOUT BLOGMINT</span>
+
+            <h2>
+                A little space<br>
+                for big ideas.
+            </h2>
+
+            <p>
+                BlogMint is a creative blogging platform where
+                people can read, write and share their ideas,
+                experiences and stories.
+            </p>
+
+            <p>
+                From technology and travel to lifestyle,
+                education and personal stories, BlogMint brings
+                different voices together.
+            </p>
+
+            <a href="#home" class="main-btn">
+                Explore BlogMint ↑
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="footer-logo">
+                    🌿 Blog<span>Mint</span>
+                </div>
+
+                <p>
+                    Fresh ideas. Fresh stories.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <a href="#home">Home</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#categories">Categories</a>
+
+            </div>
+
+            <div>
+
+                <h3>Company</h3>
+
+                <a href="#about">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 BlogMint. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- WRITE BLOG MODAL -->
+
+    <div class="modal" id="blogModal">
+
+        <div class="modal-box">
+
+            <button class="close" onclick="closeModal()">
+                ×
+            </button>
+
+            <h2>Write Your Blog</h2>
+
+            <p>
+                Share your thoughts with the BlogMint community.
+            </p>
+
+            <input
+                type="text"
+                id="blogTitle"
+                placeholder="Blog title"
+            >
+
+            <select id="blogCategory">
+
+                <option>Select category</option>
+                <option>Technology</option>
+                <option>Travel</option>
+                <option>Lifestyle</option>
+                <option>Education</option>
+                <option>Food</option>
+                <option>Stories</option>
+
+            </select>
+
+            <textarea
+                id="blogText"
+                placeholder="Write your story..."
+            ></textarea>
+
+            <button class="publish" onclick="publishBlog()">
+                Publish Blog
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
